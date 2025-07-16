@@ -22,6 +22,8 @@ public class Pear : PippedFruit
 
 public class Banana : Fruit
 {
+    public int CurveDegrees { get; set; }
+
     public int Length { get; set; }
 }
 

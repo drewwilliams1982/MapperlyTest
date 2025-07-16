@@ -2,7 +2,8 @@
 
 public abstract class FruitDto
 {
-    public string Colour { get; set; }
+    // Nullable for the AllowNullPropertyAssignment feature
+    public string? Colour { get; set; }
 }
 
 public abstract class PippedFruitDto : FruitDto
