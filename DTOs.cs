@@ -5,9 +5,19 @@ public abstract class FruitDto
     public string Colour { get; set; }
 }
 
-public class AppleDto : FruitDto
+public abstract class PippedFruitDto : FruitDto
 {
     public int NumberOfPips { get; set; }
+}
+
+public class AppleDto : PippedFruitDto
+{
+    public string Variety { get; set; }
+}
+
+public class PearDto : PippedFruitDto
+{
+    public bool CiderQuality { get; set; }
 }
 
 public class BananaDto : FruitDto

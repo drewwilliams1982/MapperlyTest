@@ -4,9 +4,20 @@ public abstract class Fruit
 {
     public string Colour { get; set; }
 }
-public class Apple : Fruit
+
+public abstract class PippedFruit : Fruit
 {
     public int NumberOfPips { get; set; }
+}
+
+public class Apple : PippedFruit
+{
+    public string Variety { get; set; }
+}
+
+public class Pear : PippedFruit
+{
+    public bool CiderQuality { get; set; }
 }
 
 public class Banana : Fruit
