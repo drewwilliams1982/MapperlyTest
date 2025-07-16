@@ -19,3 +19,8 @@ public class FruitBowlDto
 {
     public IEnumerable<FruitDto> Fruits { get; set; }
 }
+
+public class FruitBowlShopDto
+{
+    public IEnumerable<FruitBowlDto> FruitBowls { get; set; }
+}

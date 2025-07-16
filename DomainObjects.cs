@@ -18,3 +18,8 @@ public class FruitBowl
 {
     public IEnumerable<Fruit> Fruits { get; set; }
 }
+
+public class FruitBowlShop
+    {
+    public IEnumerable<FruitBowl> FruitBowls { get; set; }
+}
